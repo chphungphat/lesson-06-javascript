@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Chào</title>
+</head>
+<body>
+    <h1 style="font-weight: bolder; font-size: large;">Những cách hiển thị xin chào</h1>
+    <p>Dùng tag 'alert'</p>
+    <button type="button" onclick="showMessageAlert()">Click Me</button>
+    <p>Dùng 'getElemetById'</p>
+    <div id="message"></div>
+    <button type="button" onclick="showMessageId()">Click Me</button>
+    <p>Dùng 'write'</p>
+    <button type="button" onclick="showMessageWrite()">Click Me</button>
+    <p>Dùng 'console.log'</p>
+    <button type="button" onclick="showMessageLog()">Click Me</button>
+    <script>
+        function showMessageAlert() {
+            alert('Xin Chào');
+        }
+        function showMessageId() { 
+            document.getElementById("message").innerHTML='Xin Chào';
+        }
+        function showMessageWrite() {
+            document.write('Xin Chào');
+        }
+        function showMessageLog() {
+            console.log('Xin Chào');
+        }
+    </script>
+</body>
+</html>
